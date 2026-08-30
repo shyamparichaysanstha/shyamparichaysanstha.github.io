@@ -1,0 +1,19 @@
+{
+  "name": "श्याम संगम सार्वजनिक परिचय संस्था",
+  "short_name": "श्याम संगम",
+  "description": "वैवाहिक परिचय, परिवार समन्वय और सामाजिक सहयोग की संस्था।",
+  "lang": "hi",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "background_color": "#fff9f5",
+  "theme_color": "#7a1020",
+  "icons": [
+    {
+      "src": "/favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    }
+  ]
+}
