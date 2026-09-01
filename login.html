@@ -1,4 +1,135 @@
-<!doctype html><html lang="hi"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>सदस्य सहायता | श्याम संगम संस्था</title><meta name="description" content="श्याम संगम संस्था के पंजीकृत सदस्यों के लिए सहायता और प्रोफाइल संबंधी संपर्क।"><link rel="canonical" href="https://shyamparichaysanstha.github.io/login.html"><link rel="icon" href="favicon.svg" type="image/svg+xml"><link rel="stylesheet" href="style.css?v=20260830"></head><body>
-<header class="site-header"><nav class="nav-wrap"><a class="brand" href="index.html"><strong>श्याम संगम</strong><small>सार्वजनिक परिचय संस्था, इंदौर</small></a><button class="menu-toggle" type="button" data-menu-toggle aria-expanded="false" aria-label="मेनू खोलें">☰</button><ul class="nav-links" data-menu><li><a href="index.html">होम</a></li><li><a href="matrimony.html">विवाह परिचय</a></li><li><a href="events.html">कार्यक्रम</a></li><li><a href="gallery.html">गैलरी</a></li><li><a href="help.html">संपर्क</a></li><li><a class="nav-cta" href="index.html#register">पंजीकरण</a></li></ul></nav></header>
-<main><section class="page-hero"><div class="container"><h1>सदस्य सहायता</h1><p>सुरक्षित online login सेवा अभी उपलब्ध नहीं है। प्रोफाइल संबंधी कार्य संस्था की टीम द्वारा सीधे सहायता के साथ किए जाते हैं।</p></div></section><section class="section"><div class="container profile-safe card"><div class="icon-box">🛡️</div><h2 class="section-title">पासवर्ड यहाँ दर्ज न करें</h2><p>पुराने code में login सुविधा अधूरी थी, इसलिए सुरक्षा के लिए उसे सक्रिय नहीं किया गया है। नया पंजीकरण, बायोडाटा सुधार, प्रोफाइल रोकना या हटाना हो तो अपने पंजीकृत मोबाइल नंबर से WhatsApp करें।</p><div class="button-row" style="margin-top:24px"><a class="btn btn-primary" href="https://wa.me/919424446398?text=%E0%A4%A8%E0%A4%AE%E0%A4%B8%E0%A5%8D%E0%A4%A4%E0%A5%87%2C%20%E0%A4%AE%E0%A5%81%E0%A4%9D%E0%A5%87%20%E0%A4%B8%E0%A4%A6%E0%A4%B8%E0%A5%8D%E0%A4%AF%20%E0%A4%AA%E0%A5%8D%E0%A4%B0%E0%A5%8B%E0%A4%AB%E0%A4%BE%E0%A4%87%E0%A4%B2%20%E0%A4%B8%E0%A4%B9%E0%A4%BE%E0%A4%AF%E0%A4%A4%E0%A4%BE%20%E0%A4%9A%E0%A4%BE%E0%A4%B9%E0%A4%BF%E0%A4%8F%E0%A5%A4" target="_blank" rel="noopener">WhatsApp सहायता</a><a class="btn btn-outline" href="index.html#register">नया पंजीकरण</a></div><p class="notice" style="margin-top:24px">संस्था कभी भी WhatsApp या फोन पर आपका OTP, ईमेल पासवर्ड या बैंक PIN नहीं माँगेगी।</p></div></section></main>
-<footer class="site-footer"><div class="container footer-bottom">© 2026 श्याम संगम सार्वजनिक परिचय संस्था • <a href="privacy.html">गोपनीयता</a> • <a href="terms.html">नियम</a></div></footer><a class="whatsapp-float" href="https://wa.me/919424446398" target="_blank" rel="noopener">◉ <span>WhatsApp</span></a><aside class="consent-banner" data-consent-banner><p>आपकी अनुमति के बाद सामान्य Analytics जानकारी ली जाती है। <a href="privacy.html">विवरण</a></p><div class="consent-actions"><button class="consent-accept" data-consent="accepted">स्वीकार करें</button><button class="consent-reject" data-consent="rejected">अस्वीकार करें</button></div></aside><script src="site.js?v=20260830" defer></script></body></html>
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+    <meta charset="UTF-8">
+    <title>Login & Sign Up - Shyam Sangam</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .auth-body { background: #eef2f3; padding: 40px 20px; font-family: Arial, sans-serif; }
+        .auth-wrapper { max-width: 500px; margin: 0 auto; }
+        
+        /* Common Card Style */
+.auth-card { 
+    background: white; 
+    padding: 50px; /* Andar se box ko phulane ke liye */
+    border-radius: 20px; 
+    box-shadow: 0 10px 30px rgba(0,0,0,0.15); 
+    margin-bottom: 30px; 
+    text-align: center; 
+}        
+        h2 { color: #003366; margin-top: 0; border-bottom: 2px solid #FFD700; display: inline-block; padding-bottom: 5px; }
+        
+       .auth-input { 
+    width: 100%; 
+    padding: 18px; /* Input box ki height badh jayegi */
+    margin: 15px 0; 
+    border: 1px solid #ccc; 
+    border-radius: 8px; 
+    font-size: 1.1em; /* Likhne wala text bada dikhega */
+    box-sizing: border-box; 
+}
+
+.btn { 
+    width: 100%; 
+    padding: 20px; /* Button bada aur mota dikhega */
+    border: none; 
+    border-radius: 8px; 
+    font-weight: bold; 
+    cursor: pointer; 
+    font-size: 1.2em; /* Button ka text bada */
+    transition: 0.3s; 
+    margin-top: 10px;
+}
+
+        
+        .login-btn { background: #003366; color: white; }
+        .signup-btn { background: #d9534f; color: white; }
+        
+        .btn:hover { opacity: 0.9; transform: scale(1.02); }
+        
+        .notice { background: #fff9e6; color: #856404; padding: 10px; border-radius: 5px; font-size: 0.9em; margin-bottom: 15px; border: 1px dashed #FFD700; }
+        
+        .back-home { display: block; margin-top: 15px; text-decoration: none; color: #666; font-size: 0.9em; }
+    </style>
+</head>
+<body class="auth-body">
+
+    <div class="auth-wrapper">
+        
+        <!-- 1. LOGIN SECTION -->
+        <div class="auth-card">
+            <h2>लॉगिन (Login)</h2>
+            <p>पंजीकृत सदस्य यहाँ से प्रवेश करें</p>
+            <form action="#">
+                <input type="text" placeholder="मोबाइल नंबर / यूजर आईडी" class="auth-input" required>
+                <input type="password" placeholder="पासवर्ड" class="auth-input" required>
+                <button type="submit" class="btn login-btn">प्रवेश करें (Login)</button>
+            </form>
+        </div>
+
+        <!-- 2. SIGN UP SECTION -->
+        <div class="auth-card">
+            <h2>साइन अप (Sign Up / नया खाता)</h2>
+            <div class="notice">
+                नया खाता बनाने के बाद प्रोफाइल एक्टिवेशन के लिए ₹501 सहयोग राशि अनिवार्य है।
+            </div>
+            <form action="#">
+                <input type="text" placeholder="आपका पूरा नाम" class="auth-input" required>
+                <input type="tel" placeholder="मोबाइल नंबर" class="auth-input" required>
+                <input type="password" placeholder="एक मजबूत पासवर्ड बनाएं" class="auth-input" required>
+                <button type="submit" class="btn signup-btn">खाता बनाएं (Register)</button>
+            </form>
+        </div>
+
+        <a href="index.html" class="back-home">← वापस होम पेज पर जाएँ</a>
+    </div>
+
+<!-- 1. Firebase ki Files -->
+<!-- 1. Firebase ki Files (Inhe poora copy karein) -->
+<script src="https://cloudflare.com"></script>
+<script src="https://cloudflare.com"></script>
+
+<script>
+  var firebaseConfig = {
+    apiKey: "AIzaSyAsyd_h7AmwGkCVNC0mTQL8fQOJeQud_U",
+    authDomain: "shyam-sangam.firebaseapp.com",
+    projectId: "shyam-sangam",
+    storageBucket: "shyam-sangam.appspot.com",
+    messagingSenderId: "651373220720",
+    appId: "1:651373220720:web:447cf094f7fd9c390af5b5"
+  };
+
+  // Firebase shuru karein
+  firebase.initializeApp(firebaseConfig);
+  var auth = firebase.auth();
+
+  document.addEventListener('DOMContentLoaded', function() {
+    var allForms = document.querySelectorAll('.auth-card form');
+    
+    // SIGN UP LOGIC (Naya Khata)
+    var signupForm = allForms[1]; 
+    if (signupForm) {
+      signupForm.onsubmit = function(e) {
+        e.preventDefault();
+        var inputs = signupForm.querySelectorAll('input');
+        var name = inputs[0].value;
+        var phone = inputs[1].value;
+        var password = inputs[2].value;
+        var email = phone + "@sangam.com";
+
+        auth.createUserWithEmailAndPassword(email, password)
+          .then(function() {
+            alert("Dhanyawad " + name + "! Aapka khata ban gaya hai.");
+            signupForm.reset();
+          })
+          .catch(function(error) {
+            alert("Galti: " + error.message);
+          });
+      };
+    }
+  });
+</script>
+
+
+</body>
+</html>
